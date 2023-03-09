@@ -9,3 +9,6 @@ While it is parallelized, it runs on the CPU, so getting the 10 millionth prime 
 * Go through each element and mark all multiples of the precalculated primes as non-prime.
 * Collect the resulting indices of the buffer at which the value is true.
 * Print the 10 millionth item in that collection.
+
+### sample output
+![image of output to the console](./output.png)

@@ -17,7 +17,7 @@ fn main()
     let end = std::time::Instant::now();
     let duration = end - start;
     
-    println!("Duration of precalculating primes: {}", duration.as_secs_f32());
+    println!("Duration of precalculating primes: {} seconds", duration.as_secs_f32());
 
     let mut buffer = Vec::with_capacity(upper_limit);
     buffer.resize(upper_limit, true);
@@ -30,7 +30,7 @@ fn main()
     
     let end = std::time::Instant::now();
     let duration = end - start;
-    println!("Duration of sieve: {}", duration.as_secs_f32());
+    println!("Duration of sieve: {} seconds", duration.as_secs_f32());
 
     let mut primes = Vec::new();
     for (i, &v) in buffer.iter().enumerate()
@@ -46,7 +46,7 @@ fn main()
     let end_of_program = std::time::Instant::now();
     let duration = end_of_program - start_of_program;
     println!("{target_amount}th prime: {}", last_prime);
-    println!("duration of program: {}", duration.as_secs_f32());
+    println!("duration of program: {} seconds", duration.as_secs_f32());
 }
 
 fn find_primes(primes: &mut Vec<u32>, target_amount: usize)
